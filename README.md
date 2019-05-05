@@ -2,47 +2,48 @@
 
 Jukka Ruponen / IBM, 2019-05-04  
 
-This is a sample tutorial to work with AI OpenScale (currently named as "Watson OpenScale").  
+This is a sample tutorial to help you work with AI OpenScale (now renamed as "Watson OpenScale").  
 
-It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj), but is modified slightly for better suit to instructed tutorials in workshops.
+It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj), but is modified slightly to be better suited for deep dive hands-on tutorials and workshops.
 
 
 ## Pre-requisities
 
-- You should have completed the AI OpenScale fast-start tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start).
+- Befor you begin, you should have completed the **Watson OpenScale fast-start tutorial** [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start).
 
-After completed the fast-start tutorial already (above), you should have:  
+After completed the fast-start tutorial (above), you should have:  
 - IBM Cloud account (with an "IBM ID")
 - Watson OpenScale service
 
-To do this exercise, you are also going to need:  
+To complete this exercise, you are also going to need:  
 - Watson Studio instance (will be created in this exercise)
 - Watson Machine Learning instance (will be created in this exercise)
 - Cloud Object Storage instance (will be created in this exercise)
 
-All these can be created from IBM Cloud Catalog, under the AI category.  
+All these will be created from the [IBM Cloud Catalog](https://cloud.ibm.com/catalog), under the [AI](https://cloud.ibm.com/catalog?category=ai) category.  
 
-If you do have some of these already, you can re-use them and do NOT need to recreate the services.  
-(Just skip those steps below and follow instructions according to your environment/services).
-
-
-## Short description of the tasks/steps
-1. Create the needed services  
-2. Create and configure a project in Watson Studio  
-3. Create and deploy "Credit Risk" model in WML (Watson Machine Learning service)  
-4. Setup Watson OpenScale to connect to your deployed model in WML  
-5. Configure OpenScale Monitors for "Credit Risk" model  
-  5.1 Make a scoring request to WML for OpenScale to get the schema of the data  
-  5.2 Prepare for monitoring  
-  5.3 Configure fairness  
-  5.4 Configure accuracy  
-6. Provide feedback data (pre-labeled data for monitoring accuracy)  
-7. Validate accuracy and fairness of the "Credit Risk" model in OpenScale  
-8. Make more scoring requests to WML to see how the monitored values change  
-9. Provide additional feedback data to re-assess quality  
+**Note**: If you do have some of these services provisioned in IBM Cloud already, you can re-use them and do NOT need to recreate the services. In that case just skip those steps in the instructions below and apply the information according to your specific environment/services provisioned).
 
 
-## Step 1 - Create the needed services
+## Short description of the tasks/steps in this exercise
+1. [Create the needed services](#step1)  
+2. [Create and configure a project in Watson Studio](#step2)  
+3. [Create and deploy "Credit Risk" model in WML (Watson Machine Learning service)](#step3)  
+4. [Setup Watson OpenScale to connect to your deployed model in WML](#step4)  
+5. [Configure OpenScale Monitors for "Credit Risk" model](#step5)  
+  5.1 [Make a scoring request to WML for OpenScale to get the schema of the data](#step5.1)  
+  5.2 [Prepare for monitoring](#step5.2)  
+  5.3 [Configure fairness](#step5.3)  
+  5.4 [Configure accuracy](#step5.4)  
+6. [Provide feedback data (pre-labeled data for monitoring accuracy)](#step6)  
+7. [Validate accuracy and fairness of the "Credit Risk" model in OpenScale](step#7)  
+  7.1 [Quality of the model](#step7.1)  
+  7.2 [Fairness of the model](#step7.2)  
+8. [Make more scoring requests to WML to see how the monitored values change](#step8)  
+9. [Provide additional feedback data to re-assess quality](#step9)  
+
+
+## <a name="step1">Step 1 - Create the needed services</a>
 
 Login to IBM Cloud at https://cloud.ibm.com  
 
@@ -82,7 +83,7 @@ You should be now at the Watson Studio service details page.
 Keep it open for the next step.  
 
 
-## Step 2 - Create and configure a project in Watson Studio
+## <a name="step2">Step 2 - Create and configure a project in Watson Studio</a>
 
 On the Watson Studio service details page, press **[Get Started]**  
 
@@ -112,7 +113,7 @@ On the "**Existing**" tab, select your existing Machine Learning service "**Wats
 Press **[Select]**
 
 
-## Step 3 - Create and deploy "Credit Risk" model in WML (Watson Machine Learning service)
+## <a name="step3">Step 3 - Create and deploy "Credit Risk" model in WML (Watson Machine Learning service)</a>
 
 Let's create our Credit Risk model from sample.  
 
@@ -140,7 +141,7 @@ You should be now in the "**Assets**" view of the project and you should see you
   *credit-risk, trained, mlib-2.3, spark-2.3 ...*
 
 
-## Step 4 - Setup Watson OpenScale to connect to your deployed model in WML
+## <a name="step4">Step 4 - Setup Watson OpenScale to connect to your deployed model in WML</a>
 
 Let's next configure OpenScale and connect to the model we just deployed.  
 
@@ -184,7 +185,7 @@ Finally, when the configuration is saved, press **[Configure monitors]**
 **Note**: Leave this page open and complete the next step on another browser tab.  
 
 
-## 5. Configure OpenScale Monitors for "Credit Risk" model
+## <a name="step5">5. Configure OpenScale Monitors for "Credit Risk" model</a>
 
 From the previous step the OpenScale is now connected to WML service and subscribed to monitor the deployed "credit-risk" model.  
 
@@ -198,7 +199,7 @@ For you to know, scoring requests may of course be sent to WML in many ways:
 
 We are going to use the last option, WML's test function.  
 
-### Step 5.1 - Make a scoring request to WML for OpenScale to get the schema of the data
+### <a name="step5.1">Step 5.1 - Make a scoring request to WML for OpenScale to get the schema of the data</a>
 
 First, download the file with request data and copy its contents to Clipboard (we'll use this data with WML on below):  
 https://raw.githubusercontent.com/watson-developer-cloud/doc-tutorial-downloads/master/ai-openscale/credit_payload_data.json
@@ -230,7 +231,7 @@ press **[Configure monitors]**
 Select "**credit-risk-deployment**" and press **[Begin]**  
 
 
-### Step 5.2 - Prepare for monitoring
+### <a name="step5.2">Step 5.2 - Prepare for monitoring</a>
 
 Select "**Prepare for monitoring**"  
 To prepare to monitor, press **[Next]**  
@@ -265,7 +266,7 @@ Review the monitoring summary.
 Press **[Save]** and then **[OK]**  
 
 
-### Step 5.3 - Configure fairness
+### <a name="step5.3">Step 5.3 - Configure fairness</a>
 
 Press "**Fairness**"  
 Press **[Next]**  
@@ -302,7 +303,7 @@ Review fairness settings summary.
 Press **[Save]** and **[OK]**  
 
 
-### Step 5.3 - Configure accuracy
+### <a name="step5.4">Step 5.4 - Configure accuracy</a>
 
 Press "**Accuracy**"  
 Press **[Next]**  
@@ -328,7 +329,7 @@ You have now configured all monitors in OpenScale.
 On the "**Configure monitors**" page, press "**Go to Dashboard**" link.  
 
 
-## Step 6 - Provide feedback data (pre-labeled data for monitoring accuracy)  
+## <a name="step6">Step 6 - Provide feedback data (pre-labeled data for monitoring accuracy)</a>
 
 **Download** the following file, containing **pre-labeled feedback data**, somewhere on your computer:   
 https://raw.githubusercontent.com/watson-developer-cloud/doc-tutorial-downloads/master/ai-openscale/credit_feedback_data.csv  
@@ -358,13 +359,13 @@ If you are using the **old interface** (current), then follow these steps:
   Click the **[Check Accuracy Now]** button  
 
 
-## Step 7 - Validate accuracy and fairness of the "Credit Risk" model in OpenScale
+## <a name="step7">Step 7 - Validate accuracy and fairness of the "Credit Risk" model in OpenScale</a>
 
 **NOTE**: Since this is a new model with not much data yet, the graphs do not show much of the history.  
 Over time, with more scoring events and more feedback data provided, the insights in OpenScale will improve.  
 
 
-### Step 7.1 - Quality of the model
+### <a name="step7.1">Step 7.1 - Quality of the model</a>
 
 When exploring the Quality of the model and its training, the details in OpenScale and examination of Confusion Matrix displays will give insights that may suggest to either improve the model or train it with different data.  
 
@@ -384,7 +385,7 @@ Select **Quality** / **Precision**:
 - Either wait for more scorings & provide more feedback data to see how it develops, or try retrain the model  
 
 
-### Step 7.2 - Fairness of the model
+### <a name="step7.2">Step 7.2 - Fairness of the model</a>
 
 When examining the Fairness of the model, we can see some insights whether we should be concerned about bias and, perhaps, consider re-model or re-train it differently:  
 
@@ -409,7 +410,7 @@ To look more closely we would also need to "**Explain**" some transactions.
 However, since there are no transactions to explain, let's create some in the next step.  
 
 
-## Step 8 - Make more scoring requests in WML to see how the monitored values change  
+## <a name="step8">Step 8 - Make more scoring requests in WML to see how the monitored values change</a>
 
 On the bottom right of the page, press **[Make Scoring Request]** to see sample code snippets how you could make scoring requests.  
 
@@ -454,7 +455,7 @@ Once fairness checking is finished, take a look at the metrics now.
 What changes do you see and what observations can you make?
 
 
-## Step 9 - Provide additional feedback data to re-assess quality  
+## <a name="step9">Step 9 - Provide additional feedback data to re-assess quality</a>
 
 In order to re-assess quality, you'll first need to provide more feedback data.  
 
