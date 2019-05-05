@@ -9,13 +9,13 @@ It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/s
 
 ## Pre-requisities
 
-- Befor you begin, you should have completed the **Watson OpenScale fast-start tutorial** [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start).
+- Before you begin, you should have completed the **Watson OpenScale fast-start tutorial** [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start).
 
-After completed the fast-start tutorial (above), you should have:  
+**After completed the fast-start tutorial (above), you should have**:  
 - IBM Cloud account (with an "IBM ID")
 - Watson OpenScale service
 
-To complete this exercise, you are also going to need:  
+**To complete this exercise, you are also going to need**:  
 - Watson Studio instance (will be created in this exercise)
 - Watson Machine Learning instance (will be created in this exercise)
 - Cloud Object Storage instance (will be created in this exercise)
