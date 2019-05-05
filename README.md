@@ -1,9 +1,9 @@
 ![Header](images/header.png)
-# AI OpenScale tutorial: credit-risk
+# Watson OpenScale tutorial: credit-risk
 
 Jukka Ruponen / IBM, 2019-05-04  
 
-This is a sample tutorial to help you work with AI OpenScale (now renamed as "Watson OpenScale").  
+This is a sample tutorial that will help you work with the AI OpenScale, now renamed as "Watson OpenScale".  
 
 It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj), but is slightly modified to suit for some deep dive hands-on tutorials and workshops.  
 
