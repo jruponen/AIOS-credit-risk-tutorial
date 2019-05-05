@@ -62,10 +62,12 @@ All these will be created from the [IBM Cloud Catalog](https://cloud.ibm.com/cat
 Login to IBM Cloud at https://cloud.ibm.com  
 
 #### Creating Cloud Object Storage instance
-<img src="images/cos.png" alt="COS" width="400"/>
+<a href="https://cloud.ibm.com/catalog/services/cloud-object-storage">
+  <img src="images/cos.png" alt="COS" width="400"/>
+</a>
 
 From the **IBM Cloud Dashboard**, click **Catalog**, search for text "**object storage**" and select "**Object Storage**",  
-or click [here](https://cloud.ibm.com/catalog/services/cloud-object-storage)
+or click the image above, or click [here](https://cloud.ibm.com/catalog/services/cloud-object-storage)
 
 Change service name to more descriptive, like:  
 Service name:	**WS-ObjectStorage**  
@@ -78,10 +80,12 @@ Press **[Create]**
 In the Cloud Object Storage service details page that opens do nothing. 
 
 #### Creating Watson Machine Learning instance
-<img src="images/wml.png" alt="WML" width="400"/>
+<a href="https://cloud.ibm.com/catalog/services/machine-learning">
+  <img src="images/wml.png" alt="WML" width="400"/>
+</a>
 
-Instead, click **Catalog** again on the top menu, select **AI** category and select "**Machine Learning**" service,  
-or click [here](https://cloud.ibm.com/catalog/services/machine-learning)
+Click **Catalog** again on the top menu, select **AI** category and select "**Machine Learning**" service,  
+or click the image above, or click [here](https://cloud.ibm.com/catalog/services/machine-learning)
 
 Change service name to more descriptive, like:  
 Service name:	**Watson ML**  
@@ -94,10 +98,12 @@ Press **[Create]**
 In Watson Machine Learning service details page that opens do nothing.  
 
 #### Creating Watson Studio instance
-<img src="images/ws.png" alt="WS" width="400"/>
+<a href="https://cloud.ibm.com/catalog/services/watson-studio">
+  <img src="images/ws.png" alt="WS" width="400"/>
+</a>
 
-Instead, click **Catalog** again on the top menu, select **AI** category and select "**Watson Studio**" service,  
-or click [here](https://cloud.ibm.com/catalog/services/watson-studio)
+Click **Catalog** again on the top menu, select **AI** category and select "**Watson Studio**" service,  
+or click the image above, or click [here](https://cloud.ibm.com/catalog/services/watson-studio)
 
 Change service name to more descriptive, like:  
 Service name:	**Watson Studio**  
@@ -108,6 +114,7 @@ Make sure "Lite" is selected for free testing
 Press **[Create]**  
 
 You should be now at the Watson Studio service details page.  
+![WS-service](images/ws-service.png)
 Keep this page open for the next step.  
 
 
