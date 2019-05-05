@@ -9,23 +9,25 @@ It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/s
 
 ## Pre-requisities
 
-- Before you begin, you should have completed the **Watson OpenScale fast-start tutorial** [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start).
+Before you continue, **you should have completed the Watson OpenScale fast-start tutorial** [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start).  
+
+If you have not, then complete the fast-start tutorial now, and then come back to this exercise.  
 
 **After completed the fast-start tutorial (above), you should have**:  
 - IBM Cloud account (with an "IBM ID")
-- Watson OpenScale service
+- Watson OpenScale service instance provisioned  
 
-**To complete this exercise, you are also going to need**:  
+**In this exercise, you are also going to create additional services**:  
 - Watson Studio instance (will be created in this exercise)
 - Watson Machine Learning instance (will be created in this exercise)
 - Cloud Object Storage instance (will be created in this exercise)
 
 All these will be created from the [IBM Cloud Catalog](https://cloud.ibm.com/catalog), under the [AI](https://cloud.ibm.com/catalog?category=ai) category.  
 
-**Note**: If you do have some of these services provisioned in IBM Cloud already, you can re-use them and do NOT need to recreate the services. In that case just skip those steps in the instructions below and apply the information according to your specific environment/services provisioned).
+**Note**: If you already do have some of these services provisioned in IBM Cloud, then you may re-use them and, in that case,  do NOT need to recreate these services. If that is the case, then just skip those steps within the instructions below and apply the information from your specific environment/services, that are already provisioned.  
 
 
-## Short description of the tasks/steps in this exercise
+## List of tasks/steps in this exercise
 1. [Create the needed services](#step1)  
 2. [Create and configure a project in Watson Studio](#step2)  
 3. [Create and deploy "Credit Risk" model in WML (Watson Machine Learning service)](#step3)  
