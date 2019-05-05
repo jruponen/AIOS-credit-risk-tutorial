@@ -18,7 +18,8 @@ If you have not, then complete the [fast-start tutorial](https://cloud.ibm.com/d
 In short, to start the **fast-start tutorial** you'll:  
 - Sign up and login to the IBM Cloud at https://cloud.ibm.com  
 - Create a [Watson OpenScale](https://cloud.ibm.com/catalog/services/watson-openscale) service from the Catalog  
-  - You may change the **name** of the service to just "Watson OpenScale" and then press **[Create]**
+  <img src="images/wos.png" alt="WOS" width="400"/>  
+  You may change the **name** of the service to just "Watson OpenScale" and then press **[Create]**
 - On the Watson OpenScale service information page that opens automatically, press **[Get started]** button
 - When Watson OpenScale opens, press **[Run Demo]** and follow instructions  
 
@@ -61,6 +62,7 @@ All these will be created from the [IBM Cloud Catalog](https://cloud.ibm.com/cat
 Login to IBM Cloud at https://cloud.ibm.com  
 
 #### Creating Cloud Object Storage instance
+<img src="images/cos.png" alt="COS" width="400"/>
 
 From the **IBM Cloud Dashboard**, click **Catalog**, search for text "**object storage**" and select "**Object Storage**",  
 or click [here](https://cloud.ibm.com/catalog/services/cloud-object-storage)
@@ -76,6 +78,7 @@ Press **[Create]**
 In the Cloud Object Storage service details page that opens do nothing. 
 
 #### Creating Watson Machine Learning instance
+<img src="images/wml.png" alt="WML" width="400"/>
 
 Instead, click **Catalog** again on the top menu, select **AI** category and select "**Machine Learning**" service,  
 or click [here](https://cloud.ibm.com/catalog/services/machine-learning)
@@ -91,6 +94,7 @@ Press **[Create]**
 In Watson Machine Learning service details page that opens do nothing.  
 
 #### Creating Watson Studio instance
+<img src="images/ws.png" alt="WS" width="400"/>
 
 Instead, click **Catalog** again on the top menu, select **AI** category and select "**Watson Studio**" service,  
 or click [here](https://cloud.ibm.com/catalog/services/watson-studio)
