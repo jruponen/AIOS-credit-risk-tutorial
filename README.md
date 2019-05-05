@@ -19,8 +19,9 @@ In short, to start the **fast-start tutorial** you'll:
 - Sign up and login to the IBM Cloud at https://cloud.ibm.com  
 - Create a [Watson OpenScale](https://cloud.ibm.com/catalog/services/watson-openscale) service from the Catalog  
   <img src="images/wos.png" alt="WOS" width="400"/>  
-  You may change the **name** of the service to just "Watson OpenScale" and then press **[Create]**
-- On the Watson OpenScale service information page that opens automatically, press **[Get started]** button
+  You may change the **name** of the service to just "Watson OpenScale" and then press **[Create]**  
+- On the Watson OpenScale service information page that opens automatically, press **[Launch Application]** button  
+  <img src="images/wos-service.png" alt="wos-service.png" width="400"/>  
 - When Watson OpenScale opens, press **[Run Demo]** and follow instructions  
 
 ![](images/wos-fast-start.png)
