@@ -447,8 +447,13 @@ Select **Fairness** / **Age**:
 - Looking at the "**Training**" data in transactions view, we also see that **people over 35 are getting more "Risk"** than younger people, which could indicate the same as above. But more data would be needed to confirm.  
 - The same is is also evident when looking at scoring transactions ("**payload+perturbed**" and "**payload**"), where yonger people seem to have been favored over older people.  
 
-To look more closely we would also need to "**Explain**" some transactions.  
-However, since there are no transactions to explain, let's create some in the next step.  
+To understand more closely, we may want to "**Explain**" some scoring transactions that have introduced bias.  
+On the timeline for either age or sex fairness scores, **select a point in time that has some scoring request events**.  
+**Click on the point in time** in chart to view details and then press **[View Transactions]**.  
+
+By selecting "**Biased transactions**" you can then **Explain** both the *original* scoring transaction, and an *altered* transaction, which shows that **changing the monitored attribute in the original scoring would change the result of the scoring!**
+
+However, since there are not too much transactions to explain yet, let's create some in the next step, so that you may further explore the details.  
 
 
 ## <a name="step8">Step 8 - Make more scoring requests in WML to see how the monitored values change</a>
