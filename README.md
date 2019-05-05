@@ -29,13 +29,13 @@ In short, to start the **fast-start tutorial** you'll:
 - Watson OpenScale service instance provisioned  
 
 **In this exercise, you are also going to create additional services**:  
-- Watson Studio instance (will be created in this exercise)
-- Watson Machine Learning instance (will be created in this exercise)
-- Cloud Object Storage instance (will be created in this exercise)
+- **Watson Studio** instance (will be created in this exercise)
+- **Watson Machine Learning** instance (will be created in this exercise)
+- **Cloud Object Storage** instance (will be created in this exercise)
 
-All these will be created from the [IBM Cloud Catalog](https://cloud.ibm.com/catalog), under the [AI](https://cloud.ibm.com/catalog?category=ai) category.  
+All these will be created from the [IBM Cloud Catalog](https://cloud.ibm.com/catalog), under the [AI](https://cloud.ibm.com/catalog?category=ai) category. Just follow the instructions on below.  
 
-**Note**: If you already do have some of these services provisioned in IBM Cloud, then you may re-use them and, in that case,  do NOT need to recreate these services. If that is the case, then just skip those steps within the instructions below and apply the information from your specific environment/services, that are already provisioned.  
+**Note**: If you already do have some of these additional services provisioned in IBM Cloud, then you may re-use them and, in that case, you do NOT need to re-create these services again. If that is the case, then just skip those steps within the instructions below and apply the information from your specific environment/services that already exist.  
 
 
 ## List of tasks/steps in this exercise
@@ -60,7 +60,10 @@ All these will be created from the [IBM Cloud Catalog](https://cloud.ibm.com/cat
 
 Login to IBM Cloud at https://cloud.ibm.com  
 
-From the **IBM Cloud Dashboard**, click **Catalog**, search for text "**object storage**" and select "**Object Storage**"  
+#### Creating Cloud Object Storage instance
+
+From the **IBM Cloud Dashboard**, click **Catalog**, search for text "**object storage**" and select "**Object Storage**",  
+or click [here](https://cloud.ibm.com/catalog/services/cloud-object-storage)
 
 Change service name to more descriptive, like:  
 Service name:	**WS-ObjectStorage**  
@@ -70,8 +73,12 @@ Make sure "**Lite**" is selected for free testing
 
 Press **[Create]**  
 
-In the Cloud Object Storage service details page that opens do nothing.   
-Instead, click **Catalog** again on the top menu, select **AI** category and select "**Machine Learning**" service.  
+In the Cloud Object Storage service details page that opens do nothing. 
+
+#### Creating Watson Machine Learning instance
+
+Instead, click **Catalog** again on the top menu, select **AI** category and select "**Machine Learning**" service,  
+or click [here](https://cloud.ibm.com/catalog/services/machine-learning)
 
 Change service name to more descriptive, like:  
 Service name:	**Watson ML**  
@@ -82,7 +89,11 @@ Make sure "**Lite**" is selected for free testing
 Press **[Create]**  
 
 In Watson Machine Learning service details page that opens do nothing.  
-Instead, click **Catalog** again on the top menu, select **AI** category and select "**Watson Studio**" service.  
+
+#### Creating Watson Studio instance
+
+Instead, click **Catalog** again on the top menu, select **AI** category and select "**Watson Studio**" service,  
+or click [here](https://cloud.ibm.com/catalog/services/watson-studio)
 
 Change service name to more descriptive, like:  
 Service name:	**Watson Studio**  
@@ -93,7 +104,7 @@ Make sure "Lite" is selected for free testing
 Press **[Create]**  
 
 You should be now at the Watson Studio service details page.  
-Keep it open for the next step.  
+Keep this page open for the next step.  
 
 
 ## <a name="step2">Step 2 - Create and configure a project in Watson Studio</a>
