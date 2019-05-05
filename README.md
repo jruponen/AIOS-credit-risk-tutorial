@@ -7,7 +7,12 @@ This is a sample tutorial that will help you work with the AI OpenScale, now ren
 
 It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj), but is slightly modified to suit for some deep dive hands-on tutorials and workshops.  
 
-For additional OpenScale exercises, take loot at [here](https://github.com/pmservice/ai-openscale-tutorials).  
+Here is an overview of the scenario on this tutorial:  
+![Header](images/usecase.jpg)  
+
+For additional OpenScale exercises, take loot at:  
+- https://github.com/pmservice/ai-openscale-tutorials  
+- https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-ov  
 
 
 ## Pre-requisities
