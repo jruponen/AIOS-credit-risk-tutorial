@@ -4,7 +4,9 @@ Jukka Ruponen / IBM, 2019-05-04
 
 This is a sample tutorial to help you work with AI OpenScale (now renamed as "Watson OpenScale").  
 
-It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj), but is modified slightly to be better suited for deep dive hands-on tutorials and workshops.
+It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj), but is slightly modified to suit for some deep dive hands-on tutorials and workshops.  
+
+For additional OpenScale exercises, take loot at [here](https://github.com/pmservice/ai-openscale-tutorials).  
 
 
 ## Pre-requisities
