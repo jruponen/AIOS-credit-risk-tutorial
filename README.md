@@ -38,8 +38,8 @@ If you do have some of these already, you can re-use them and do NOT need to rec
   5.4 Configure accuracy  
 6. Provide feedback data (pre-labeled data for monitoring accuracy)  
 7. Validate accuracy and fairness of the "Credit Risk" model in OpenScale  
-8. Make more scoring requests in WML to see how the monitored values change  
-9. Provide additional feedback data to assess accuracy  
+8. Make more scoring requests to WML to see how the monitored values change  
+9. Provide additional feedback data to re-assess quality  
 
 
 ## Step 1 - Create the needed services
@@ -93,9 +93,9 @@ Press **[Create a project]**
 
 Click **"Standard"** to create an empty project and set the follwing values:  
 
-  Name: **AI model and validation project**  
-  Description: **Credit Risk model for OpenScale monitoring and validation**  
-  Define storage: Select your just created "**WS-ObjectStorage**"  
+  **Name**: AI model and validation project  
+  **Description**: Credit Risk model for OpenScale monitoring and validation  
+  **Define storage**: Select your just created "**WS-ObjectStorage**"  
 
 Press **[Create]**  
 
@@ -127,8 +127,8 @@ Since your newly created model now opens in WML, we can also deploy it at once.
 Select "**Deployments tab**" and click **[Add deployment]**.  
 
 Define the settings as:  
-  Name: **credit-risk-deployment**  
-  Deployment type: **Web service**  
+  **Name**: credit-risk-deployment   
+  **Deployment type**: Web service  
 
 Press **[Save]**  
 
@@ -416,13 +416,70 @@ On the bottom right of the page, press **[Make Scoring Request]** to see sample 
 As discussed in step 5, there are many ways to score requests with WML.  
 
 Let's use a sample Python Notebook to make some 1000 random scoring requests.  
+You can preview or download the sample notebook here: https://dataplatform.cloud.ibm.com/analytics/notebooks/v2/939cd559-c838-48a7-8f04-5414864cca97/view?access_token=2fb420637679cf3f7495c694c8467e2c609bf1cae10ce9de68bc1efb5851667b  
 
-Go to your project in Watson Studio.  
+Go to your "AI model and validation" project in Watson Studio.  
+
+On the top actions, press **[+Add to project]**  
+
+Select **Notebook**  
+
+Press "**From URL**" on the top and then set the Notebook values as:  
+**Name**: Score Credit Risk model  
+**Description**: Score Credit Risk model with 1000 randomly selected requests from sample data  
+**Notebook URL**: https://github.com/jruponen/AIOS-tutorial-credit-risk/raw/master/Score%20Credit%20Risk%20model.ipynb  
+**Select runtime**: Default Spark Python 3.5 XS (Driver with 1 vCPU and 4 GB RAM, 2 executors with  1 vCPU and 4 GB RAM each  
+
+Press **[Create Notebook]**  
+
+The Notebook opens in edit mode.  
+
+**IMPORTANT**: Before you run it, follow the instructions on the Notebook to **fill in correct values in first two cells**.  
+Watson Machine Learning service credentails (wml_credentials) are needed to do scoring.  
+Scoring End-point URL (scoring_url) is the unique address of your deployed scoring endpoint for Credit Risk model.  
+
+After you have corrected the values in the first two cells, **then you can run the Notebook**.  
+Press **Run** button on the toolbar.  
+
+You have now scored your model with 1000 randomly chosen records taken from sample data (containing approx 19000 records total).  
+
+Go back to OpenScale insights for your "**credit-risk-deployment**" model.  
+The **fairness** metrics are automatically checked hourly.  
+To update them now to reflect new scorings, do the following:  
+
+Select **Fairness** / **Sex**.  
+On the right side **"Schedule"** widget, press **[Check Fairness Now]**.  
+
+Once fairness checking is finished, take a look at the metrics now.  
+What changes do you see and what observations can you make?
 
 
+## Step 9 - Provide additional feedback data to re-assess quality  
+
+In order to re-assess quality, you'll first need to provide more feedback data.  
+
+Download **additional feedback data** (pre-labeled data) from here:  
+https://github.com/jruponen/AIOS-tutorial-credit-risk/raw/master/additional_feedback_data.csv  
+
+Select **Quality** / **Accuracy** and on the "**Schedule**" widget on the right, press "**Add feedback data**"
+
+On the "**Implementation for feedback data**" page, press **[Add Feedback Data]**
+
+Browse for **additional_feedback_data.csv** file on your computer and press **[Open]**  
+
+On the "**Field delimiter**" dialog, select "**Comma (,)**" and press **[Select]**  
+
+Once you see "**additional_feedback_data.csv uploaded succesfully**" message on page, press **[OK]** next to it  
+
+Press **[OK]** on bottom of the page and you should be taken back to the "credit-risk-deployment" scenario  
+
+Select **Quality** / **Accuracy** and press "**Check Quality Now**" on the right  
+
+On the right side **"Schedule"** widget, press **[Check quality now]**.  
+
+Once quality checking is finished, take a look at the quality metrics now.  
+What changes do you see (if any) and what observations can you make?  
 
 
-
-
-
-
+**For more information, examine the rest of the OpenScale documentation**
+https://cloud.ibm.com/docs/services/ai-openscale
