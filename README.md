@@ -137,4 +137,43 @@ You should be now in the "**Assets**" view of the project and you should see you
 
 ### Step 4 - Setup Watson OpenScale to connect to your deployed model in WML
 
+Let's next configure OpenScale and connect to the model we just deployed.  
+
+To access the OpenScale dashboard, go to https://aiopenscale.cloud.ibm.com  
+
+Alternative way to go to your OpenScale dashboard:  
+  Go to IBM Cloud at https://cloud.ibm.com  
+  On the dashboard, the first "**Resource summary**" widget shows summary of your apps and services  
+  Click "**Services**"  
+  Scroll down until you see the "**Watson OpenScale**" service and click on its name  
+  On the Watson OpenScale service details page, press **[Launch Application]**  
+
+
+When in OpenScale dashboard, press the "**Configure**" icon on the left side options (it is the fourth from top).  
+
+In the "**Configuration Summary**" page, press **[Edit]** (on the bottom of page)  
+
+Select "**Watson Machine Learning**"  
+(Notice, that OpenScale supports other scoring platforms as well)
+
+Either keep the currently selected WML instance (recommended) or change it if needed.  
+Remember, the "**Watson ML**" is the service we need to connect to because that is where we deployed our model.  
+
+Press **[Next]**  
+
+On the list of WML deployments, select the "**credit-risk-deployment**".  
+**Note**: If there are other models selected already, you may want to keep them as well to retain their configuration in OpenScale).  
+
+Press **[Next]**  
+
+On the "**Select your database**" page, select the "**Use the free Lite plan database**"  
+**Note**: Using the lite plan database is not GDPR compliant. Use it for testing only.  
+For production use, setup a productional Db2 or PostgreSQL database instead.  
+
+Press **[Next]**  
+
+On the "**Summary**" page, press **[Save]** and then **[Yes]**  
+
+Finally, when the configuration is saved, press **[Configure monitors]**  
+
 
