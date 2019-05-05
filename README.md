@@ -36,7 +36,7 @@ All these will be created from the [IBM Cloud Catalog](https://cloud.ibm.com/cat
   5.3 [Configure fairness](#step5.3)  
   5.4 [Configure accuracy](#step5.4)  
 6. [Provide feedback data (pre-labeled data for monitoring accuracy)](#step6)  
-7. [Validate accuracy and fairness of the "Credit Risk" model in OpenScale](step#7)  
+7. [Validate accuracy and fairness of the "Credit Risk" model in OpenScale](#step7)  
   7.1 [Quality of the model](#step7.1)  
   7.2 [Fairness of the model](#step7.2)  
 8. [Make more scoring requests to WML to see how the monitored values change](#step8)  
