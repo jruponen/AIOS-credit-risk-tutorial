@@ -39,37 +39,102 @@ If you do have some of these already, you can re-use them and do NOT need to rec
 
 ### Step 1 - Create the needed services
 
-Login to IBM Cloud at (https://cloud.ibm.com)
+Login to IBM Cloud at https://cloud.ibm.com  
 
-From the Dashboard, click Catalog, search for "object storage" and select "Object Storage"
+From the **IBM Cloud Dashboard**, click **Catalog**, search for text "**object storage**" and select "**Object Storage**"  
 
-Change service name to more descriptive, like:
-Service name:	WS-ObjectStorage
+Change service name to more descriptive, like:  
+Service name:	**WS-ObjectStorage**  
 
-Scroll down for "Pricing Plans"
-Make sure "Lite" is selected for free testing
+Scroll down for "**Pricing Plans**"  
+Make sure "**Lite**" is selected for free testing  
 
-Press [Create]
+Press **[Create]**  
 
-In Cloud Object Storage service dashboard that opens, do nothing but instead
-on the top menu, click Catalog again, select AI category and select "Machine Learning"
+In the Cloud Object Storage service details page that opens do nothing.   
+Instead, click **Catalog** again on the top menu, select **AI** category and select "**Machine Learning**" service.  
 
-Change service name to more descriptive, like:
-Service name:	Watson ML
+Change service name to more descriptive, like:  
+Service name:	**Watson ML**  
 
-Scroll down for "Pricing Plans"
-Make sure "Lite" is selected for free testing
+Scroll down for "**Pricing Plans**"  
+Make sure "**Lite**" is selected for free testing  
 
-Press [Create]
+Press **[Create]**  
 
-In Watson Machine Learning service dashboard that opens, do nothing but instead
-on the top menu, click Catalog again, select AI category "Watson Studio"
+In Watson Machine Learning service details page that opens do nothing.  
+Instead, click **Catalog** again on the top menu, select **AI** category and select "**Watson Studio**" service.  
 
-Change service name to more descriptive, like:
-Service name:	Watson Studio
+Change service name to more descriptive, like:  
+Service name:	**Watson Studio**  
 
-Scroll down for "Pricing Plans"
-Make sure "Lite" is selected for free testing
+Scroll down for "**Pricing Plans**"  
+Make sure "Lite" is selected for free testing  
 
-Press [Create]
+Press **[Create]**  
+
+You should be now at the Watson Studio service details page.  
+Keep it open for the next step.  
+
+
+### Step 2 - Create and configure a project in Watson Studio
+
+On the Watson Studio service details page, press **[Get Started]**  
+
+You should be now at the **Watson Studio welcome page**.  
+Let's continue by creating our AI project, configure the project with Cloud Object Storage and Watson Machine Learning services (that you created above) and finally create our model and deploy to WML.  
+
+Press **[Create a project]**  
+
+Click **"Standard"** to create an empty project and set the follwing values:  
+
+  Name: **AI model and validation project**  
+  Description: **Credit Risk model for OpenScale monitoring and validation**  
+  Define storage: Select your just created "**WS-ObjectStorage**"  
+
+Press **[Create]**  
+
+You are now in an empty project.  
+
+Let's connect the **Watson Machine Learning service** to our project.  
+
+On the top row, select "**Settings**" tab and scroll down to "**Associated services**"  
+Next to "**Associated services**" section, press **[Add service]** drop down list on the right and select "**Watson**".  
+
+Then press **[Add]** on the "**Machine Learning**" service area.  
+On the "**Existing**" tab, select your existing Machine Learning service "**Watson ML**", that you just created earlier.  
+
+Press **[Select]**
+
+
+### Step 3 - Create and deploy "Credit Risk" model in WML (Watson Machine Learning service)
+
+Let's create our Credit Risk model from sample.  
+
+From the top actions, press **[+ Add to project]** and select "**Watson Machine Learning model**"  
+
+On the right side section, select model type as "**From sample**"  
+Select "**Credit Risk**" model (notice that when selected the name of model was also set to "**credit-risk**")  
+
+Press **[Create]**  
+
+Since your newly created model now opens in WML, we can also deploy it at once.  
+Select "**Deployments tab**" and click **[Add deployment]**.  
+
+Define the settings as:  
+  Name: **credit-risk-deployment**  
+  Deployment type: **Web service**  
+
+Press **[Save]**  
+
+You can now go back to your project page:  
+On the top navigation path "My Projects / AI model and validation project", click on the project name "**AI model and validation project**".  
+
+You should be now in the "**Assets**" view of the project and you should see your model under the "**Models**" section:
+
+  *credit-risk, trained, mlib-2.3, spark-2.3 ...*
+
+
+### Step 4 - Setup Watson OpenScale to connect to your deployed model in WML
+
 
