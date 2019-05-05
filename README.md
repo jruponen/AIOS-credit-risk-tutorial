@@ -18,14 +18,14 @@ If you have not, then complete the [fast-start tutorial](https://cloud.ibm.com/d
 In short, to start the **fast-start tutorial** you'll:  
 - Sign up and login to the IBM Cloud at https://cloud.ibm.com  
 - Create a [Watson OpenScale](https://cloud.ibm.com/catalog/services/watson-openscale) service from the Catalog  
-  <a href="https://cloud.ibm.com/catalog/services/watson-openscale">
+  <a href="https://cloud.ibm.com/catalog/services/watson-openscale" target="_blank">
     <img src="images/wos.png" alt="WOS" width="400"/>
   </a>  
   You may change the **name** of the service to just "Watson OpenScale" and then press **[Create]**  
 - On the Watson OpenScale service information page that opens automatically, press **[Launch Application]** button  
   <img src="images/wos-service.png" alt="wos-service.png" width="400"/>  
 - When Watson OpenScale opens, press **[Run Demo]** and follow instructions  
-  <a href="https://cloud.ibm.com/catalog/services/watson-openscale">
+  <a href="https://cloud.ibm.com/catalog/services/watson-openscale" target="_blank">
     <img src="images/wos-fast-start.png" alt="WOS" width="400"/>
   </a>  
 
@@ -66,7 +66,7 @@ All these will be created from the [IBM Cloud Catalog](https://cloud.ibm.com/cat
 Login to IBM Cloud at https://cloud.ibm.com  
 
 #### Creating Cloud Object Storage instance
-<a href="https://cloud.ibm.com/catalog/services/cloud-object-storage">
+<a href="https://cloud.ibm.com/catalog/services/cloud-object-storage" target="_blank">
   <img src="images/cos.png" alt="COS" width="400"/>
 </a>
 
@@ -84,7 +84,7 @@ Press **[Create]**
 In the Cloud Object Storage service details page that opens do nothing. 
 
 #### Creating Watson Machine Learning instance
-<a href="https://cloud.ibm.com/catalog/services/machine-learning">
+<a href="https://cloud.ibm.com/catalog/services/machine-learning" target="_blank">
   <img src="images/wml.png" alt="WML" width="400"/>
 </a>
 
@@ -102,7 +102,7 @@ Press **[Create]**
 In Watson Machine Learning service details page that opens do nothing.  
 
 #### Creating Watson Studio instance
-<a href="https://cloud.ibm.com/catalog/services/watson-studio">
+<a href="https://cloud.ibm.com/catalog/services/watson-studio" target="_blank">
   <img src="images/ws.png" alt="WS" width="400"/>
 </a>
 
@@ -128,7 +128,7 @@ Keep this page open for the next step.
 On the Watson Studio service details page, press **[Get Started]**  
 
 You should be now at the **Watson Studio welcome page**.  
-<a href="http://dataplatform.cloud.ibm.com/">
+<a href="http://dataplatform.cloud.ibm.com/" target="_blank">
   <img src="images/01-ws-welcome.png" alt="WS" width="400"/>
 </a>  
 
