@@ -13,8 +13,16 @@ For additional OpenScale exercises, take loot at [here](https://github.com/pmser
 ## Pre-requisities
 
 Before you continue, **you should have completed the Watson OpenScale fast-start tutorial** [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start).  
+If you have not, then complete the [fast-start tutorial](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start) now, and then come back to this exercise.  
 
-If you have not, then complete the fast-start tutorial now, and then come back to this exercise.  
+In short, to start the **fast-start tutorial** you'll:  
+- Sign up and login to the IBM Cloud at https://cloud.ibm.com  
+- Create a [Watson OpenScale](https://cloud.ibm.com/catalog/services/watson-openscale) service from the Catalog  
+  - You may change the **name** of the service to just "Watson OpenScale" and then press **[Create]**
+- On the Watson OpenScale service information page that opens automatically, press **[Get started]** button
+- When Watson OpenScale opens, press **[Run Demo]** and follow instructions  
+
+![](images/wos-fast-start.png)
 
 **After completed the fast-start tutorial (above), you should have**:  
 - IBM Cloud account (with an "IBM ID")
