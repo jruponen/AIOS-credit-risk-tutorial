@@ -1,7 +1,7 @@
 ![Header](images/header.png)
 # Watson OpenScale tutorial: credit-risk
 
-Jukka Ruponen / IBM, 2019-05-04  
+Author: Jukka Ruponen / IBM, 2019-05-04  
 
 This is a sample tutorial that will help you work with the AI OpenScale, now renamed as "Watson OpenScale".  
 
