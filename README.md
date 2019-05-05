@@ -1,3 +1,4 @@
+![Header](images/header.png)
 # AI OpenScale tutorial: credit-risk
 
 Jukka Ruponen / IBM, 2019-05-04  
