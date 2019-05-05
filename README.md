@@ -337,6 +337,12 @@ Press **[Next]**
 Review fairness settings summary.  
 Press **[Save]** and **[OK]**  
 
+**NOTE**: Did you notice the implementation of a **debiased scoring endpoint**?  
+When detected, OpenScale can mitigate bias by using various types of algorithms, depending on the type of bias.  
+If you want to learn more about different ways (and algorithms) to detect and mitigate bias, take a look at the Open Source implementation of the "[AI Fairness 360 toolkit](https://aif360.mybluemix.net/)".  
+Especially you should take a look at the [demo](https://aif360.mybluemix.net/data) to see how it works.  
+There are also [links](https://aif360.mybluemix.net/resources) to reference papers, tutorials, guidance and more.  
+
 
 ### <a name="step5.4">Step 5.4 - Configure accuracy</a>
 
