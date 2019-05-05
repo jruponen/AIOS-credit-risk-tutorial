@@ -18,7 +18,9 @@ If you have not, then complete the [fast-start tutorial](https://cloud.ibm.com/d
 In short, to start the **fast-start tutorial** you'll:  
 - Sign up and login to the IBM Cloud at https://cloud.ibm.com  
 - Create a [Watson OpenScale](https://cloud.ibm.com/catalog/services/watson-openscale) service from the Catalog  
-  <img src="images/wos.png" alt="WOS" width="400"/>  
+  <a href="https://cloud.ibm.com/catalog/services/watson-openscale">
+    <img src="images/wos.png" alt="WOS" width="400"/>
+  </a>  
   You may change the **name** of the service to just "Watson OpenScale" and then press **[Create]**  
 - On the Watson OpenScale service information page that opens automatically, press **[Launch Application]** button  
   <img src="images/wos-service.png" alt="wos-service.png" width="400"/>  
@@ -115,7 +117,8 @@ Make sure "Lite" is selected for free testing
 Press **[Create]**  
 
 You should be now at the Watson Studio service details page.  
-![WS-service](images/ws-service.png)
+<img src="images/ws-service.png" alt="ws-service.png" width="400"/>  
+
 Keep this page open for the next step.  
 
 
@@ -124,7 +127,9 @@ Keep this page open for the next step.
 On the Watson Studio service details page, press **[Get Started]**  
 
 You should be now at the **Watson Studio welcome page**.  
-<img src="images/01-ws-welcome.png" alt="WML" width="400"/>
+<a href="http://dataplatform.cloud.ibm.com/">
+  <img src="images/01-ws-welcome.png" alt="WS" width="400"/>
+</a>  
 
 Let's continue by creating our AI project, configure the project with Cloud Object Storage and Watson Machine Learning services (that you created above) and finally create our model and deploy to WML.  
 
@@ -210,7 +215,10 @@ Alternative way to go to your OpenScale dashboard:
   On the Watson OpenScale service details page, press **[Launch Application]**  
 
 When in OpenScale dashboard, press the "**Configure**" icon on the left side options (it is the fourth from top).  
-<img src="images/11-wos-insights-dashboard-1.png" alt="11-wos-insights-dashboard-1.png" width="400"/>  
+<a href="https://aiopenscale.cloud.ibm.com">
+  <img src="images/11-wos-insights-dashboard-1.png" alt="11-wos-insights-dashboard-1.png" width="400"/>
+</a>  
+
 
 In the "**Configuration Summary**" page, press **[Edit]** (on the bottom of page)  
 <img src="images/12-wos-configure-1.png" alt="12-wos-configure-1.png" width="400"/>  
@@ -427,7 +435,9 @@ Just press **[OK]** for now.
 You have now configured all monitors in OpenScale.  
 On the "**Configure monitors**" page, press "**Go to Dashboard**" link.  
 That will take you to the OpenScale dashboard page.  
-<img src="images/48-wos-dashboard.png" alt="48-wos-dashboard.png" width="400"/>  
+<a href="https://aiopenscale.cloud.ibm.com">
+  <img src="images/48-wos-dashboard.png" alt="48-wos-dashboard.png" width="400"/>
+</a>  
 
 
 ## <a name="step6">Step 6 - Provide feedback data (pre-labeled data for monitoring accuracy)</a>
