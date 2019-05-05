@@ -209,11 +209,11 @@ Let's next configure OpenScale and connect to the model we just deployed.
 To access the OpenScale dashboard, go to https://aiopenscale.cloud.ibm.com  
 
 Alternative way to go to your OpenScale dashboard:  
-  Go to IBM Cloud at https://cloud.ibm.com  
-  On the dashboard, the first "**Resource summary**" widget shows summary of your apps and services  
-  Click "**Services**"  
-  Scroll down until you see the "**Watson OpenScale**" service and click on its name  
-  On the Watson OpenScale service details page, press **[Launch Application]**  
+&nbsp;&nbsp;Go to IBM Cloud at https://cloud.ibm.com  
+&nbsp;&nbsp;On the dashboard, the first "**Resource summary**" widget shows summary of your apps and services  
+&nbsp;&nbsp;Click "**Services**"  
+&nbsp;&nbsp;Scroll down until you see the "**Watson OpenScale**" service and click on its name  
+&nbsp;&nbsp;On the Watson OpenScale service details page, press **[Launch Application]**  
 
 When in OpenScale dashboard, press the "**Configure**" icon on the left side options (it is the fourth from top).  
 <a href="https://aiopenscale.cloud.ibm.com">
@@ -453,26 +453,26 @@ The next step depends on **which interface you are using, the new one (beta) or 
 At the moment **you can switch between the old and new interface** in the **right uppper corner** of the Insights dashboard.  
 
 If you are using the **new interface** (beta), then follow these steps:  
-  Under "**Quality**" category on left, select "**Accuracy**"  
-  On the "**Schedule**" widget on right, press "**Add feedback data**"  
-  <img src="images/49-wos-new-ui-add-feedback.png" alt="49-wos-new-ui-add-feedback.png" width="400"/>  
-  You are now, again, on the "**Implementation for feedback data**" page, press **[Add Feedback Data]**  
-  Browse for **credit_feedback_data.csv** file on your computer and press **[Open]**  
-  On the "**Field delimiter**" dialog, select "**Comma (,)**" and press **[Select]**  
-  Once you see "**credit_feedback_data.csv uploaded succesfully**" message on page, press **[OK]** next to it  
-  <img src="images/51-wos-added-feedback-data.png" alt="51-wos-added-feedback-data.png" width="400"/>  
-  Press **[OK]** on bottom of the page and you should be taken back to the "credit-risk-deployment" scenario  
-  Under "**Quality**" category on left, select "**Accuracy**" and press "**Check Quality Now**" on the right  
+&nbsp;&nbsp;Under "**Quality**" category on left, select "**Accuracy**"  
+&nbsp;&nbsp;On the "**Schedule**" widget on right, press "**Add feedback data**"  
+&nbsp;&nbsp;<img src="images/49-wos-new-ui-add-feedback.png" alt="49-wos-new-ui-add-feedback.png" width="400"/>  
+&nbsp;&nbsp;You are now, again, on the "**Implementation for feedback data**" page, press **[Add Feedback Data]**  
+&nbsp;&nbsp;Browse for **credit_feedback_data.csv** file on your computer and press **[Open]**  
+&nbsp;&nbsp;On the "**Field delimiter**" dialog, select "**Comma (,)**" and press **[Select]**  
+&nbsp;&nbsp;Once you see "**credit_feedback_data.csv uploaded succesfully**" message on page, press **[OK]** next to it  
+&nbsp;&nbsp;<img src="images/51-wos-added-feedback-data.png" alt="51-wos-added-feedback-data.png" width="400"/>  
+&nbsp;&nbsp;Press **[OK]** on bottom of the page and you should be taken back to the "credit-risk-deployment" scenario  
+&nbsp;&nbsp;Under "**Quality**" category on left, select "**Accuracy**" and press "**Check Quality Now**" on the right  
 
 If you are using the **old interface** (current), then follow these steps:  
-  Press the **[Configuration]** button/icon on right  
-  <img src="images/50-wos-old-ui-add-feedback.png" alt="50-wos-old-ui-add-feedback.png" width="400"/>  
-  Press **[Add Feedback Data]** button  
-  Browse for **credit_feedback_data.csv** file on your computer and press **[Open]**  
-  On the "**Field delimiter**" dialog, select "**Comma (,)**" and press **[Select]**  
-  Once you see "**credit_feedback_data.csv uploaded succesfully**" message in the widget, press **[OK]** next to it  
-  <img src="images/51-wos-added-feedback-data.png" alt="51-wos-added-feedback-data.png" width="400"/>  
-  Click the **[Check Accuracy Now]** button  
+&nbsp;&nbsp;Press the **[Configuration]** button/icon on right  
+&nbsp;&nbsp;<img src="images/50-wos-old-ui-add-feedback.png" alt="50-wos-old-ui-add-feedback.png" width="400"/>  
+&nbsp;&nbsp;Press **[Add Feedback Data]** button  
+&nbsp;&nbsp;Browse for **credit_feedback_data.csv** file on your computer and press **[Open]**  
+&nbsp;&nbsp;On the "**Field delimiter**" dialog, select "**Comma (,)**" and press **[Select]**  
+&nbsp;&nbsp;Once you see "**credit_feedback_data.csv uploaded succesfully**" message in the widget, press **[OK]** next to it  
+&nbsp;&nbsp;<img src="images/51-wos-added-feedback-data.png" alt="51-wos-added-feedback-data.png" width="400"/>  
+&nbsp;&nbsp;Click the **[Check Accuracy Now]** button  
 
 
 ## <a name="step7">Step 7 - Validate accuracy and fairness of the "Credit Risk" model in OpenScale</a>
