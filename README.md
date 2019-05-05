@@ -377,9 +377,9 @@ https://raw.githubusercontent.com/watson-developer-cloud/doc-tutorial-downloads/
 
 On the OpenScale **Insights dashboard**, select the "**credit-risk-deployment**" model  
 
-In OpenScale we are soon switching to a new user interface.  
-The next step depends on which interface you are using, the new one (beta) or the old one (current).  
-At the moment you can actually **switch between the old and new interface** in the **right uppper corner** of the Insights dashboard.  
+**Note**: As you may have observed, in OpenScale we are soon switching to a new user interface.  
+The next step depends on **which interface you are using, the new one (beta) or the old one (current)**.  
+At the moment **you can switch between the old and new interface** in the **right uppper corner** of the Insights dashboard.  
 
 If you are using the **new interface** (beta), then follow these steps:  
   Under "**Quality**" category on left, select "**Accuracy**"  
