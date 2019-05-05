@@ -129,7 +129,7 @@ Let's continue by creating our AI project, configure the project with Cloud Obje
 
 On the Welcome Page, press **[Create a project]**  
 
-Click **"Standard"** to create an empty project.
+Click **"Standard"** to create an empty project.  
 <img src="images/02-ws-create-project.png" alt="02-ws-create-project.png" width="400"/>  
 
 Set the follwing values for the project:  
