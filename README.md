@@ -7,6 +7,21 @@ This is a sample tutorial that will help you work with the AI OpenScale, now ren
 
 It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj), but is slightly modified to suit for some deep dive hands-on tutorials and workshops.  
 
+**Other resources and tutorials you should also check to learn more about Watson OpenScale (WOS):**  
+
+If you'd rather see before you try, then check out info, videos ad guided demos:  
+- WOS product page: https://www.ibm.com/cloud/watson-openscale/  
+- Explainable AI: https://www.ibm.com/watson/explainable-ai  
+- Guided demo: https://www.ibm.com/cloud/garage/demo/try-ai-openscale  
+
+For other OpenScale hands-on exercises, take loot at:  
+- Collection of WOS tutorials: https://github.com/pmservice/ai-openscale-tutorials  
+- WOS Python SDK tutorial: https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-ov  
+- Custom WOS Python SDK tutorial: https://github.com/IBM/monitor-custom-ml-engine-with-watson-openscale  
+- Advanced WOS Python SDK tutorial: https://github.com/jruponen/AIOS-python-sdk-tutorial  
+
+
+
 Here is an overview of the scenario in this tutorial:  
 ![Use-Case](images/use-case.jpg)
 
@@ -25,19 +40,6 @@ The data science techniques most suited to these diverse datasets, such as gradi
 The credit risk model provided in this tutorial uses a training dataset that contains 20 attributes about each loan applicant. Two of those attributes - age and sex - can be tested for bias. For this tutorial, the focus will be on bias against sex and age.
 
 Watson OpenScale will monitor the deployed model's propensity for a favorable outcome ("No Risk") for one group (the Reference Group) over another (the Monitored Group). In this tutorial, the Monitored Group for sex is female, while the Monitored Group for age is 19 to 25.
-
-**Other resources and alternative tutorials to learn about OpenScale:**  
-
-If you'd rather take a look before you try, then check out info, videos ad guided demos:  
-- https://www.ibm.com/cloud/watson-openscale/  
-- https://www.ibm.com/watson/explainable-ai  
-- https://www.ibm.com/cloud/garage/demo/try-ai-openscale  
-
-For additional OpenScale hands-on exercises, take loot at:  
-- https://github.com/pmservice/ai-openscale-tutorials  
-- https://github.com/IBM/monitor-custom-ml-engine-with-watson-openscale  
-- https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-ov  (advanced)
-- https://github.com/jruponen/AIOS-python-sdk-tutorial (advanced)  
 
 
 ## Pre-requisities
