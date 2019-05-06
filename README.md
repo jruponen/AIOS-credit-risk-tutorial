@@ -11,8 +11,8 @@ It is based on the Watson OpenScale credit risk model validation tutorial [here]
 If you'd rather see before you try, then check out info, videos and guided demos here:  
 - WOS product page: https://www.ibm.com/cloud/watson-openscale/  
 - Explainable AI: https://www.ibm.com/watson/explainable-ai  
-- Guided demo: https://www.ibm.com/cloud/garage/demo/try-ai-openscale  
-- AI Fairness 360 Toolkit with demo (open source, great source to learn more): https://aif360.mybluemix.net/
+- WOS guided demo: https://www.ibm.com/cloud/garage/demo/try-ai-openscale  
+- AI Fairness 360 Toolkit with demo (great source to learn more about the topic): https://aif360.mybluemix.net/
 
 For other OpenScale hands-on exercises, take loot at:  
 - Collection of WOS tutorials: https://github.com/pmservice/ai-openscale-tutorials  
