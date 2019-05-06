@@ -3,9 +3,8 @@
 
 Author: Jukka Ruponen / IBM, 2019-05-04  
 
-This is a sample tutorial that will help you work with the AI OpenScale, now renamed as "Watson OpenScale".  
-
-It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj), but is slightly modified to suit for some deep dive hands-on tutorials and workshops.  
+This is a sample tutorial that will help you work with the AI OpenScale, now known as "Watson OpenScale".  
+It is based on the Watson OpenScale credit risk model validation tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj), but is slightly modified to suit for some deep dive hands-on tutorials and workshops.  
 
 **Other resources and tutorials you should also check to learn more about Watson OpenScale (WOS):**  
 
