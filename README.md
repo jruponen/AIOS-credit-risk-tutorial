@@ -28,8 +28,10 @@ Watson OpenScale will monitor the deployed model's propensity for a favorable ou
 
 **Other resources and alternative tutorials to learn about OpenScale:**  
 
-If you'd rather take a look before you try, check out the guided demo here:  
-https://www.ibm.com/cloud/garage/demo/try-ai-openscale
+If you'd rather take a look before you try, then check out info, videos ad guided demos:  
+- https://www.ibm.com/cloud/watson-openscale/  
+- https://www.ibm.com/watson/explainable-ai  
+- https://www.ibm.com/cloud/garage/demo/try-ai-openscale  
 
 For additional OpenScale hands-on exercises, take loot at:  
 - https://github.com/pmservice/ai-openscale-tutorials  
@@ -480,7 +482,8 @@ On the OpenScale **Insights dashboard**, select the "**credit-risk-deployment**"
 The next step depends on **which interface you are using, the new one (beta) or the old one (current)**.  
 At the moment **you can switch between the old and new interface** in the **right uppper corner** of the Insights dashboard.  
 
-If you are using the **new interface** (beta), then follow these steps:  
+
+#### If you are using the New interface (beta), then follow these steps:  
 &nbsp;&nbsp;Under "**Quality**" category on left, select "**Accuracy**"  
 &nbsp;&nbsp;On the "**Schedule**" widget on right, press "**Add feedback data**"  
 &nbsp;&nbsp;<img src="images/49-wos-new-ui-add-feedback.png" alt="49-wos-new-ui-add-feedback.png" width="400"/>  
@@ -492,7 +495,8 @@ If you are using the **new interface** (beta), then follow these steps:
 &nbsp;&nbsp;Press **[OK]** on bottom of the page and you should be taken back to the "credit-risk-deployment" scenario  
 &nbsp;&nbsp;Under "**Quality**" category on left, select "**Accuracy**" and press "**Check Quality Now**" on the right  
 
-If you are using the **old interface** (current), then follow these steps:  
+
+#### If you are using the Old interface (current), then follow these steps:  
 &nbsp;&nbsp;Press the **[Configuration]** button/icon on right  
 &nbsp;&nbsp;<img src="images/50-wos-old-ui-add-feedback.png" alt="50-wos-old-ui-add-feedback.png" width="400"/>  
 &nbsp;&nbsp;Press **[Add Feedback Data]** button  
