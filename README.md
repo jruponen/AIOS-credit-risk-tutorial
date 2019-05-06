@@ -40,7 +40,7 @@ For additional OpenScale hands-on exercises, take loot at:
 
 ## Pre-requisities
 
-Before you continue, **you should have completed the Watson OpenScale fast-start tutorial** [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start).  
+Before you continue with this tutorial, **you should have, at minimum, completed the Watson OpenScale fast-start tutorial** [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start).  
 If you have not, then complete the [fast-start tutorial](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-wos-fast-start) now, and then come back to this exercise.  
 
 In short, to start the **fast-start tutorial** you'll:  
