@@ -32,10 +32,10 @@ If you'd rather take a look before you try, check out the guided demo here:
 https://www.ibm.com/cloud/garage/demo/try-ai-openscale
 
 For additional OpenScale hands-on exercises, take loot at:  
-- https://github.com/jruponen/AIOS-python-sdk-tutorial
 - https://github.com/pmservice/ai-openscale-tutorials  
-- https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-ov  
 - https://github.com/IBM/monitor-custom-ml-engine-with-watson-openscale  
+- https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-ov  (advanced)
+- https://github.com/jruponen/AIOS-python-sdk-tutorial (advanced)  
 
 
 ## Pre-requisities
