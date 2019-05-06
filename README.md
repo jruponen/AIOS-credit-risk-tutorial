@@ -7,12 +7,35 @@ This is a sample tutorial that will help you work with the AI OpenScale, now ren
 
 It is based on the Watson OpenScale tutorial [here](https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-gs-obj#gs-obj), but is slightly modified to suit for some deep dive hands-on tutorials and workshops.  
 
-Here is an overview of the scenario on this tutorial:  
+Here is an overview of the scenario in this tutorial:  
 ![Use-Case](images/use-case.jpg)
 
-For additional OpenScale exercises, take loot at:  
+The level of current credit risk modeling in financial sector
+
+Traditional lenders are under pressure to expand their digital portfolio of financial services to a larger and more diverse audience, which requires a new approach to credit risk modeling. Their data science teams currently rely on standard modeling techniques - like decision trees and logistic regression - which work well for moderate datasets, and make recommendations that can be easily explained. This satisfies regulatory requirements that credit lending decisions must be transparent and explainable.
+
+Possible futures of credit risk modeling
+
+To provide credit access to a wider and riskier population, applicant credit histories must expand beyond traditional credit, like mortgages and car loans, to alternate credit sources like utility and mobile phone plan payment histories, plus education and job titles. These new data sources offer promise, but also introduce risk by increasing the likelihood of unexpected correlations which introduce bias based on an applicant’s age, gender, or other personal traits.
+
+Concerns & GDPR
+
+The data science techniques most suited to these diverse datasets, such as gradient boosted trees and neural networks, can generate highly accurate risk models, but at a cost. Such "black box" models generate opaque predictions that must somehow become transparent, to ensure regulatory approval such as Article 22 of the General Data Protection Regulation (GDPR), or the federal Fair Credit Reporting Act (FCRA) managed by the Consumer Financial Protection Bureau.
+
+The credit risk model provided in this tutorial uses a training dataset that contains 20 attributes about each loan applicant. Two of those attributes - age and sex - can be tested for bias. For this tutorial, the focus will be on bias against sex and age.
+
+Watson OpenScale will monitor the deployed model's propensity for a favorable outcome ("No Risk") for one group (the Reference Group) over another (the Monitored Group). In this tutorial, the Monitored Group for sex is female, while the Monitored Group for age is 19 to 25.
+
+**Other resources and alternative tutorials to learn about OpenScale:**  
+
+If you'd rather take a look before you try, check out the guided demo here:  
+https://www.ibm.com/cloud/garage/demo/try-ai-openscale
+
+For additional OpenScale hands-on exercises, take loot at:  
+- https://github.com/jruponen/AIOS-python-sdk-tutorial
 - https://github.com/pmservice/ai-openscale-tutorials  
 - https://cloud.ibm.com/docs/services/ai-openscale?topic=ai-openscale-crt-ov#crt-ov  
+- https://github.com/IBM/monitor-custom-ml-engine-with-watson-openscale  
 
 
 ## Pre-requisities
