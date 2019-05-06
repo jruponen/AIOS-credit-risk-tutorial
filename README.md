@@ -352,15 +352,15 @@ Select "**Manually configure monitors**"
 Press **[Next]**  
 
 Since this is a "*Risk"/"No-Risk*" type of binary model, select "**Binary classification**"  
-<img src="images/26-wos-binary-classification.png" alt="26-wos-binary-classification.png" width="500"/>  
+<img src="images/26-wos-binary-classification.png" alt="26-wos-binary-classification.png" width="350"/>  
 Press **[Next]**  
 
-On the "**Specify location of the training data**" page, the location of sample data should be pre-populated (from the model)  
+On the "**Specify location of the training data**" page, the location of sample data should be pre-populated (from the model) and you should not need to change it  
 <img src="images/27-wos-location-of-training-data.png" alt="27-wos-location-of-training-data.png" width="500"/>  
 Just press **[Next]**  
 
-The **schema** and **table** info should also be pre-populated (from the model)  
-<img src="images/28-wos-select-training-table.png" alt="28-wos-select-training-table.png" width="500"/>  
+The **schema** and **table** info should also be pre-populated (from the model) and you should not need to change them  
+<img src="images/28-wos-select-training-table.png" alt="28-wos-select-training-table.png" width="350"/>  
 Just press **[Next]**  
 
 On the "**Select the label column from the training data**", select "**Risk**" as the pre-labeled column.  
